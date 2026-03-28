@@ -1,0 +1,50 @@
+.body {
+    font-family: 'Kosugi Maru', sans-serif;
+    background-color: #000000;
+    color: #fa0000;
+    margin: 0;
+    padding: 0;
+}
+
+.content-section {
+    text-align: center;
+}
+
+.content-section-h2{
+    font-size: 2.5em;
+}
+
+.opciones-grid, .recomendaciones-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.opciones-item, .recomendaciones-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+.opciones-item-img, .recomendaciones-item-img {
+    width: 30%;
+    border-radius: 50px;
+}
+
+.opciones-item-h3 {
+    font-size: 1.5rem;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-h2 {
+    font-size: 2em;
+}
