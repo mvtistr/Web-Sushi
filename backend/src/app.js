@@ -1,10 +1,9 @@
 import express from 'express'
 import morgan from 'morgan'
-import router from './rutas/auth.rutas.js'
-import authRutas from './rutas/auth.rutas.js'
-import tarRutas from './rutas/tasRutas.js'
-import comprar from './rutas/compra.rutas.js'
-import ordenesRouter from './rutas/ordenes.js'
+import authRutas from './routes/auth.rutas.js'
+import tarRutas from './routes/tasRutas.js'
+import comprar from './routes/compra.rutas.js'
+import ordenesRouter from './routes/ordenes.js'
 import cors from 'cors'
 
 const app = express()
@@ -15,16 +14,17 @@ app.use(cors({
 app.use(morgan('dev'))
 app.use(express.json())
 
-app.use('/api',router)
-app.use('/api/productos',tarRutas)
 app.use('/api',authRutas)
+app.use('/api/productos',tarRutas)
+app.use('/api',comprar)
+app.use('/ordenes', ordenesRouter);
 app.use('/api',comprar)
 app.use('/ordenes', ordenesRouter);
 
 app.get('/', (req, res) => {
     res.send('Servidor corriendo...');
 });
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });

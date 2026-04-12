@@ -1,6 +1,23 @@
 {
-  "dependencies": {
-    "cors": "^2.8.5",
-    "morgan": "^1.10.0"
-  }
+  "name": "sushi-monorepo",
+  "version": "1.0.0",
+  "description": "Aplicación web Sushi - Frontend React + Backend Node.js",
+  "main": "index.js",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "install:all": "npm install",
+    "dev": "concurrently \"npm run dev --workspace=backend\" \"npm run dev --workspace=frontend\"",
+    "build": "npm run build --workspace=frontend",
+    "start": "npm run start --workspace=backend",
+    "clean": "rm -rf node_modules && npm run clean --workspace=backend && npm run clean --workspace=frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": ["sushi", "react", "nodejs", "mongodb"],
+  "author": "Tu Nombre",
+  "license": "MIT"
 }
