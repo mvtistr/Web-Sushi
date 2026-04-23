@@ -11,66 +11,66 @@ import mesas from '../img/mesas-restaurant.png';
 
 export function Homepag() {
     return (
-        <div className='font-["Kosugi_Maru"] bg-black text-neon-red m-0 p-0'>
-            <section id="Sobrenosotros" className="text-center p-12">
-                <h2 className="text-4xl mb-5 text-neon-red">Sobre Nosotros</h2>
+        <div className='font-["Kosugi_Maru"] bg-black text-white m-0 p-0'>
+            <section id="Sobrenosotros" className="text-center p-12 border-b-2 border-neon-red">
+                <h2 className="text-4xl mb-5 text-neon-red font-bold">Sobre Nosotros</h2>
                 <p className="mb-4 text-gray-300">Nuestros ancestros de origen japonés llegaron a Chile en el año 1976, comenzando una nueva vida en la comuna de Maipú y trayendo sus tradiciones milenarias del Oriente al Occidente, siendo la primera casa de sushi de la comuna, región y del país.</p>
                 <p className="mb-4 text-gray-300">Nos enorgullece contar con 48 años de experiencia, brindando piezas de fusión japonesa/americana y piezas 100% japonesas. Gracias a la disciplina y amor, hemos transmitido nuestro conocimiento sobre el sushi de generación en generación, siendo esta la tercera generación de la familia que decide ser parte de este gran y bello proyecto, enfocados en entregarte una experiencia de primer nivel tanto culinariamente como en entretenimiento.</p>
                 <p className="mb-4 text-gray-300">Ven a visitarnos a nuestro nuevo local ubicado en Mar de Chile 516, Maipú</p>
-                <p className="font-semibold text-neon-red">¡Pide ya!</p>
+                <p className="font-semibold text-neon-red text-lg">¡Pide ya!</p>
             </section>
 
-            <section id="opciones" className="text-center p-8">
-                <h2 className="text-4xl mb-5 text-neon-red">Nuestras opciones</h2>
+            <section id="opciones" className="text-center p-8 border-b-2 border-neon-red">
+                <h2 className="text-4xl mb-5 text-neon-red font-bold">Nuestras opciones</h2>
                 <div className="flex justify-around flex-wrap gap-5">
-                    <div className="bg-white rounded-lg p-5 shadow-md max-w-xs">
+                    <div className="bg-dark-bg rounded-lg p-5 shadow-lg border border-neon-red border-opacity-30 hover:border-opacity-100 max-w-xs transition-all">
                         <img src={logo} alt="retiro en local" className="w-1/3 rounded-full" />
-                        <h3 className="text-xl mt-4">Retiro en local</h3>
-                        <p>Puedes pedir a través de nuestra página y retirar tu pedido en nuestro local en Mar de Chile 516, Maipú</p>
+                        <h3 className="text-xl mt-4 text-neon-red">Retiro en local</h3>
+                        <p className="text-gray-300">Puedes pedir a través de nuestra página y retirar tu pedido en nuestro local en Mar de Chile 516, Maipú</p>
                     </div>
-                    <div className="bg-white rounded-lg p-5 shadow-md max-w-xs">
+                    <div className="bg-dark-bg rounded-lg p-5 shadow-lg border border-neon-red border-opacity-30 hover:border-opacity-100 max-w-xs transition-all">
                         <img src={logoDelivery} alt="despacho" className="w-1/3 rounded-full" />
-                        <h3 className="text-xl mt-4">Despacho a domicilio</h3>
-                        <p>Si te encuentras en un radio de 3KM, tu pedido es entregado de manera gratuita en tu domicilio.</p>
+                        <h3 className="text-xl mt-4 text-neon-red">Despacho a domicilio</h3>
+                        <p className="text-gray-300">Si te encuentras en un radio de 3KM, tu pedido es entregado de manera gratuita en tu domicilio.</p>
                     </div>
-                    <div className="bg-white rounded-lg p-5 shadow-md max-w-xs">
+                    <div className="bg-dark-bg rounded-lg p-5 shadow-lg border border-neon-red border-opacity-30 hover:border-opacity-100 max-w-xs transition-all">
                         <img src={mesas} alt="comer en local" className="w-1/3 rounded-full" />
-                        <h3 className="text-xl mt-4">Ven a nuestro local</h3>
-                        <p>Contamos con capacidad para 12 personas, ¡así que corre y ven pronto a disfrutar de nuestro local!</p>
+                        <h3 className="text-xl mt-4 text-neon-red">Ven a nuestro local</h3>
+                        <p className="text-gray-300">Contamos con capacidad para 12 personas, ¡así que corre y ven pronto a disfrutar de nuestro local!</p>
                     </div>
                 </div>
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 mt-8">
-                    <img src={i1} alt="Foto 1" className="w-full h-auto rounded-lg shadow-md" />
-                    <img src={i2} alt="Foto 2" className="w-full h-auto rounded-lg shadow-md" />
-                    <img src={i3} alt="Foto 3" className="w-full h-auto rounded-lg shadow-md" />
-                    <img src={i4} alt="Foto 4" className="w-full h-auto rounded-lg shadow-md" />
-                    <img src={i5} alt="Foto 5" className="w-full h-auto rounded-lg shadow-md" />
-                    <img src={i6} alt="Foto 6" className="w-full h-auto rounded-lg shadow-md" />
+                    <img src={i1} alt="Foto 1" className="w-full h-auto rounded-lg shadow-md border border-neon-red border-opacity-20" />
+                    <img src={i2} alt="Foto 2" className="w-full h-auto rounded-lg shadow-md border border-neon-red border-opacity-20" />
+                    <img src={i3} alt="Foto 3" className="w-full h-auto rounded-lg shadow-md border border-neon-red border-opacity-20" />
+                    <img src={i4} alt="Foto 4" className="w-full h-auto rounded-lg shadow-md border border-neon-red border-opacity-20" />
+                    <img src={i5} alt="Foto 5" className="w-full h-auto rounded-lg shadow-md border border-neon-red border-opacity-20" />
+                    <img src={i6} alt="Foto 6" className="w-full h-auto rounded-lg shadow-md border border-neon-red border-opacity-20" />
                 </div>
             </section>
 
-            <section id="recomendaciones" className="content-section p-8">
-                <h2 className="text-3xl font-bold mb-4 text-red-600">Comentarios</h2>
+            <section id="recomendaciones" className="content-section p-8 border-b-2 border-neon-red">
+                <h2 className="text-3xl font-bold mb-4 text-neon-red">Comentarios</h2>
                 <div className="recomendaciones-grid grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="recomendaciones-item bg-gray-800 shadow-md rounded-lg p-4">
-                        <p>&quot;La mejor experiencia de comida japonesa que he tenido en mucho tiempo. ¡Altamente recomendado!&quot;</p>
-                        <p className="font-semibold text-red-500">- Javier Fuenzalida</p>
+                    <div className="recomendaciones-item bg-dark-bg shadow-md rounded-lg p-4 border border-neon-red border-opacity-30">
+                        <p className="text-gray-200">&quot;La mejor experiencia de comida japonesa que he tenido en mucho tiempo. ¡Altamente recomendado!&quot;</p>
+                        <p className="font-semibold text-neon-red mt-2">- Javier Fuenzalida</p>
                     </div>
-                    <div className="recomendaciones-item bg-gray-800 shadow-md rounded-lg p-4">
-                        <p>&quot;Los sabores son exquisitos y el ambiente es inmejorable.&quot;</p>
-                        <p className="font-semibold text-red-500">- Matias Sepulveda</p>
+                    <div className="recomendaciones-item bg-dark-bg shadow-md rounded-lg p-4 border border-neon-red border-opacity-30">
+                        <p className="text-gray-200">&quot;Los sabores son exquisitos y el ambiente es inmejorable.&quot;</p>
+                        <p className="font-semibold text-neon-red mt-2">- Matias Sepulveda</p>
                     </div>
-                    <div className="recomendaciones-item bg-gray-800 shadow-md rounded-lg p-4">
-                        <p>&quot;El Teraki me recordó a mi viaje a Japón. ¡Delicioso!&quot;</p>
-                        <p className="font-semibold text-red-500">- Matias Salas</p>
+                    <div className="recomendaciones-item bg-dark-bg shadow-md rounded-lg p-4 border border-neon-red border-opacity-30">
+                        <p className="text-gray-200">&quot;El Teraki me recordó a mi viaje a Japón. ¡Delicioso!&quot;</p>
+                        <p className="font-semibold text-neon-red mt-2">- Matias Salas</p>
                     </div>
                 </div>
             </section>
 
             <footer id="contact" className="footer">
                 <h2 className="footer-h2 mb-10">Contáctanos</h2>
-                <p className='m-5-0'>A través del número: <span className="font-semibold">+569 8920 0172</span></p>
-                <p className='m-5-0'>A través del correo: <span className="font-semibold">Fukusuke_sushi@gmail.com</span></p>
+                <p className='m-5-0'>A través del número: <span className="font-semibold text-neon-red">+569 8920 0172</span></p>
+                <p className='m-5-0'>A través del correo: <span className="font-semibold text-neon-red">Fukusuke_sushi@gmail.com</span></p>
                 <p className='m-5-0'>Visítanos en nuestro local ubicado en Mar de Chile 516, Santiago, Maipú, Región Metropolitana.</p>
                 <p className='m-5-0'>&copy; 2024 Fukusuke. Todos los derechos reservados.</p>
             </footer>

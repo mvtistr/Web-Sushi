@@ -4,34 +4,52 @@
 
 @layer base {
   :root {
-    --color-primary: #fa0000;
-    --color-dark-bg: #333235;
-    --color-burgundy: #833434;
+    --color-primary-red: #ff0000;
+    --color-red-accent: #cc0000;
+    --color-black: #000000;
+    --color-dark-bg: #1a1a1a;
+    --color-burgundy: #8b0000;
+  }
+  
+  body {
+    @apply bg-black text-white font-sans;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply px-4 py-2 bg-neon-red text-white rounded hover:bg-primary transition;
+    @apply px-4 py-2 bg-neon-red text-white rounded hover:bg-red-accent transition-all duration-300 shadow-md hover:shadow-red-glow;
+  }
+
+  .btn-secondary {
+    @apply px-4 py-2 bg-black border-2 border-neon-red text-neon-red rounded hover:bg-neon-red hover:text-black transition-all duration-300;
   }
 
   .btn-glow {
-    @apply shadow-red-glow;
+    @apply shadow-red-glow hover:shadow-red-glow-intense;
   }
 
   .form-input {
-    @apply w-full px-3 py-2 border-b-2 border-gray-400 focus:border-neon-red;
+    @apply w-full px-3 py-2 bg-dark-bg border-b-2 border-gray-600 text-white focus:border-neon-red focus:outline-none transition-colors;
   }
 
   .card {
-    @apply bg-white rounded-lg shadow-md p-4;
+    @apply bg-dark-bg rounded-lg shadow-lg p-4 border border-neon-red border-opacity-20 hover:border-opacity-50 transition-all;
   }
 
   .header-bg {
-    @apply bg-black h-32 flex items-center justify-between px-5;
+    @apply bg-black h-32 flex items-center justify-between px-5 border-b-2 border-neon-red;
   }
 
   .home-bg {
-    @apply bg-dark-bg min-h-screen text-white;
+    @apply bg-black min-h-screen text-white;
+  }
+
+  .link-hover {
+    @apply text-white hover:text-neon-red transition-colors duration-300;
+  }
+
+  .accent-red {
+    @apply text-neon-red;
   }
 }

@@ -40,38 +40,41 @@ export function Menu() {
     }, []);
 
     return (
-        <div className="p-8">
+        <div className="bg-black text-white min-h-screen p-8">
             <center>
-                <h1 className="text-4xl font-bold mb-8">Todos los Productos:</h1>
+                <h1 className="text-4xl font-bold mb-8 text-neon-red">Todos los Productos:</h1>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     {data.map((item) => (
                         <ItemCard 
                             key={item._id} 
+                            id={item._id}
                             titulo={item.titulo} 
-                            precio={`$${item.precio}`} 
+                            price={item.precio} 
                             stock={item.stock} 
                         />
                     ))}
                 </div>
-                <h1 className="text-3xl font-bold mb-4">Productos:</h1>
-                <h2 className="text-2xl font-semibold mb-4">Sushi rolls (9 unidades)</h2>
+                <h1 className="text-3xl font-bold mb-4 mt-8 text-neon-red">Productos:</h1>
+                <h2 className="text-2xl font-semibold mb-4 text-gray-300">Sushi rolls (9 unidades)</h2>
                 <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
                     {productos.map((producto) => (
                         <ItemCard
                             key={producto._id}
+                            id={producto._id}
                             titulo={producto.titulo.replace("-", " ").toUpperCase()}
-                            price={`$${producto.precio}`}
+                            price={producto.precio}
                             stock={producto.stock} 
                         />
                     ))}
                 </section>
-                <h1 className="text-3xl font-bold mb-4">Bebidas:</h1>
+                <h1 className="text-3xl font-bold mb-4 mt-8 text-neon-red">Bebidas:</h1>
                 <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     {bebidas.map((bebida) => (
                         <ItemCard
                             key={bebida._id}
+                            id={bebida._id}
                             titulo={bebida.titulo.replace("-", " ").toUpperCase()}
-                            price={`$${bebida.precio}`}
+                            price={bebida.precio}
                             stock={bebida.stock}
                         />
                     ))}

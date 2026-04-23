@@ -6,5 +6,5 @@ dotenv.config()
 
 connectDB()
 app.listen(process.env.PORT || 7000, () => {
-    console.log(`Servidor en el Puerto ${process.env.PORT || 7000}`)
+    console.log(`Servidor corriendo en http://localhost:${process.env.PORT || 7000}`)
 })
